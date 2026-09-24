@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Pessoal</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    <body class="bg-[url('fotodefundo4.jpeg')] bg-cover bg-center bg-fixed min-h-screen text-gray-800 font-sans p-6 md:p-10">
+    
+
+    <header class="flex flex-col items-center justify-center min-h-[60vh] bg-slate-900/80 backdrop-blur-md hover:bg-slate-900/60 text-white p-6 text-center transition-colors duration-500 text-white p-6 text-center">
+        <!-- Foto -->
+        <img class="w-32 h-32 rounded-full border-4 border-indigo-500 mb-4 shadow-lg object-cover" 
+             src="perfilpessoal-A3.jpg"
+             alt="Foto de Perfil">
+        
+        <!-- Minhas informações -->
+        <h1 class="text-3xl md:text-4xl font-bold">Ana Larissa</h1>
+        <p class="text-indigo-400 font-medium mt-2">Estudante de Análise e Desenvolvimento de Sistemas </p>
+    </header>
+<main class="max-w-5xl mx-auto my-10">
+        
+        <h2 class="text-2xl font-bold text-white mb-6 text-center drop-shadow-lg">
+            O que estou estudando
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- 1 -->
+            <div class="bg-slate-900/85 backdrop-blur-md p-6 rounded-xl shadow-xl border border-indigo-500/30 hover:bg-slate-800/90 hover:scale-105 hover:border-indigo-400 transition-all duration-300">
+                <h3 class="text-lg font-bold text-indigo-300 mb-2">Lógica & Algoritmos</h3>
+                <p class="text-gray-200 text-sm">Resolução de problemas, estrutura de dados e conceitos básicos de programação.</p>
+            </div>
+
+            <!-- 2 -->
+            <div class="bg-slate-900/85 backdrop-blur-md p-6 rounded-xl shadow-xl border border-indigo-500/30 hover:bg-slate-800/90 hover:scale-105 hover:border-indigo-400 transition-all duration-300">
+                <h3 class="text-lg font-bold text-indigo-300 mb-2">HTML5 & CSS3</h3>
+                <p class="text-gray-200 text-sm">Criação de páginas web, estilização responsiva e uso do Tailwind CSS.</p>
+            </div>
+
+            <!--3-->
+            <div class="bg-slate-900/85 backdrop-blur-md p-6 rounded-xl shadow-xl border border-indigo-500/30 hover:bg-slate-800/90 hover:scale-105 hover:border-indigo-400 transition-all duration-300">
+                <h3 class="text-lg font-bold text-indigo-300 mb-2">Ferramentas</h3>
+                <p class="text-gray-200 text-sm">Prática com VS Code, controle de versão no Git e publicação no GitHub.</p>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>
