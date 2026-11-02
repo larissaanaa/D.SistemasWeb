@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanchonete do Campus · Cardápio Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Lanchonete do Campus</h1>
+    <p>Cardápio digital · IFPE Palmares</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="titulo-cardapio">
+      <h2 id="titulo-cardapio">Cardápio</h2>
+
+      <label for="busca">Buscar no cardápio</label>
+      <input type="search" id="busca" name="busca" autocomplete="off">
+
+      <ul id="cardapio"></ul>
+    </section>
+
+    <section aria-labelledby="titulo-carrinho">
+      <h2 id="titulo-carrinho">Carrinho</h2>
+      <ul id="carrinho"></ul>
+      <p id="total" role="status">Carrinho vazio</p>
+    </section>
+
+    <section aria-labelledby="titulo-pedido">
+      <h2 id="titulo-pedido">Fazer pedido</h2>
+      <form id="pedido" novalidate>
+        <label for="nome">Seu nome</label>
+        <input type="text" id="nome" name="nome" required minlength="2" autocomplete="name"
+               aria-describedby="nome-erro">
+        <span id="nome-erro" class="erro" role="alert"></span>
+
+        <label for="zap">WhatsApp (com DDD)</label>
+        <input type="tel" id="zap" name="zap" required minlength="10" autocomplete="tel"
+               aria-describedby="zap-erro">
+        <span id="zap-erro" class="erro" role="alert"></span>
+
+        <button type="submit">Fazer pedido</button>
+      </form>
+
+      <pre id="mensagem" role="status"></pre>
+    </section>
+  </main>
+</body>
+</html>
